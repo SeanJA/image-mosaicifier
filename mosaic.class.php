@@ -104,7 +104,7 @@ class mosaic {
         $mosaic = '<table width="' . $this->w . '" height="' . $this->h . '" cellspacing="0" cellpadding="0" border="0" bgcolor="#fefefe" class="' . $class . '">';
         $mosaic .= '<tbody>';
         for ($y = 0; $y < $this->h; $y+=$this->sharpness) {
-            $mosaic .= '<tr>';
+            $mosaic .= '<tr height="' . $this->sharpness . '">';
             for ($x = 0; $x < $this->w; $x+=$this->sharpness) {
                 $color = imagecolorat($resource, $x, $y);
                 //get an rgba colour
